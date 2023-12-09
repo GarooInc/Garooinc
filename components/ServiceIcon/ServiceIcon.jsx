@@ -4,7 +4,7 @@ import "./ServiceIcon.css"
 
 const ServiceIcon = ({ image, title, text }) => {
     return (
-        <div className='flex flex-col items-start gap-2 mb-8 mt-8 min-w-xl md:items-center '>
+        <div className='flex flex-col items-start gap-2 mt-8 min-w-xl md:items-center '>
             <div className='overlay_serviceicon' >
                 <img className='image_serviceicon' src={image} alt='service'/>
             </div>

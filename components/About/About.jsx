@@ -9,7 +9,7 @@ const About = ({ title, subtitle, text1, text2, solutionTitle, solutionText, ico
         <div>
           <div>
             <div>
-              <p className="text-base font-semibold leading-7 text-garoo-blue font-inter ">{title}</p>
+              <p className="text-base font-semibold leading-7 text-garoo-sky font-inter ">{title}</p>
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl font-inter">{subtitle}</h1>
               <p className="mt-6 text-xl leading-8 text-gray-700 glassmorphism">
                 {text1}

@@ -6,7 +6,7 @@ import { Link } from "react-scroll"
 
 
 const navigation = [
-  { name: 'About', href: '/about' },
+  { name: 'About', href: 'about' },
   { name: 'Services', href: '/services' },
   { name: 'Portfolio', href: '/portfolio' },
 ]
@@ -36,7 +36,7 @@ const NavBar = () => {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <Link key={item.name} to={item.href} spy={true} smooth={true} duration={500} className="text-sm font-semibold leading-6 text-gray-900 cursor-pointer">
+              <Link key={item.name} to={item.href} spy={true} smooth={true} duration={500} className="text-sm font-semibold leading-6 text-gray-900 cursor-pointer hover:text-garoo-sky">
                 {item.name}
               </Link>
             ))}
