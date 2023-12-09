@@ -1,0 +1,31 @@
+.overlay_serviceicon{
+    background-color: #F1FCFF;
+    border: 1px solid #29ABE2;
+    border-radius: 20px;
+    max-width: 200px;
+    max-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+}
+
+.overlay_serviceicon img{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+@media screen and (max-width:940px) {
+
+    .serviceicon h1 {
+        font-size: 20px;
+    }
+
+    .serviceicon p {
+        font-size: 12px;
+    }
+}

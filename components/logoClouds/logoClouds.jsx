@@ -19,7 +19,7 @@ const LogoClouds = () => {
     return (
       <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h1 className="mt-2 text-3xl font-bold tracking-tight text-garoo-sky sm:text-4xl text-center">
+          <h1 className="mt-2 text-3xl font-bold tracking-tight text-garoo-sky sm:text-4xl text-center font-inter">
           Trusted By Renowned ENTREPRENEURS
           </h1>
           <div className="marquee-container">
@@ -29,8 +29,8 @@ const LogoClouds = () => {
                     key={logo}
                     src={logo}
                     alt=""
-                    className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                    width={150}
+                    className="col-span-2 max-h-12 w-full object-cover lg:col-span-1"
+                    width={180}
                     height={50}
                 />
                 ))

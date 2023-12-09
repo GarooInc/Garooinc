@@ -22,7 +22,7 @@ const Home = () => {
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
           </div>
           <div className="text-center">
-            {Tittle("Ordinary technology made extraordinary")}
+            <Tittle title="Ordinary technology made extraordinary" />
             <p className="mt-6 text-lg leading-8 text-gray-600">
             Empowering Growth through Innovative E-commerce and AI Bot Solutions
             </p>

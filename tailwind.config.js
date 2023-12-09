@@ -27,7 +27,7 @@ module.exports = {
     extend: {
       fontFamily: {
         satoshi: ['Satoshi', 'sans-serif'],
-        inter: ['Inter', 'sans-serif'],
+        inter: ['inter', 'sans-serif'],
         strech: ['Strech', 'sans-serif'],
         hoey : ['hooey', 'sans-serif'],
       },
