@@ -12,7 +12,7 @@ const Portfolio = () => {
             <div className="lg:max-w-lg">
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-6xl">From Guatemala to the <span className="mt-2 text-3xl font-bold tracking-tight text-garoo-sky sm:text-6xl">World.</span></h1>
               <p className="mt-6 text-xl leading-8 text-gray-700">
-              We are proud to serve clients globally with our cutting-edge e-commerce and AI bot solutions. We are committed to delivering top-notch technology that empowers businesses to succeed in the digital era. Join us on this journey of innovation and let's shape the future together.
+              We are proud to serve clients globally with our cutting-edge e-commerce and AI bot solutions. We are committed to delivering top-notch technology that empowers businesses to succeed in the digital era. Join us on this journey of innovation and let&apos;s shape the future together.
               </p>
               <Stats />
             </div>
