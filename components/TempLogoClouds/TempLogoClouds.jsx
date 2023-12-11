@@ -1,6 +1,6 @@
 import React from "react"
 import Image from "next/image"
-import "./LogoClouds.css"
+import "./TempLogoClouds.css"
 
 const LogoClouds = () => {
     const logos = [
