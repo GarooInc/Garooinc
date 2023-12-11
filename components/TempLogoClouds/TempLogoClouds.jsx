@@ -29,9 +29,7 @@ const LogoClouds = () => {
                     key={logo}
                     src={logo}
                     alt=""
-                    className="col-span-2 max-h-12 w-full object-cover lg:col-span-1"
-                    width={180}
-                    height={50}
+                    className="col-span-2 max-h-12 w-full object-cover lg:col-span-1 max-w-[100px]"
                 />
                 ))
             }
