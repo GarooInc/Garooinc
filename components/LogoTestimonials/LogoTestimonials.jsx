@@ -1,37 +1,32 @@
-import React from "react"
+"use client";
 import "./LogoTestimonials.css"
-import Image from "next/image"
+import React, { useEffect, useRef } from 'react';
 
-const LogoTestimonials = () => {
-    const testimonials = [
-      {
-        text: "“Garoo Inc is a great company to work with.”",
-        src : "/assets/images/testimonials/1.png",
-      },
-      {
-        text: "“I am very happy with the results.”",
-        src : "/assets/images/testimonials/3.png",
-      }
-    ]
+const LogoTestimonials = ({testimonials}) => {
+  const carouselRef = useRef(null);
+
+  useEffect(() => {
+    const ul = carouselRef.current;
+    if (ul) {
+      const clone = ul.cloneNode(true);
+      clone.setAttribute('aria-hidden', 'true');
+      ul.parentNode.insertBefore(clone, ul.nextSibling);
+    }
+  }
+  , []);
 
     return (
-      <div className="w-full bg-white py-12 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="marquee-container">
-          <div className="mx-auto mt-10 flex items-center md:gap-x-20 gap-x-10 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-16 lg:mx-0 lg:max-w-none lg:grid-cols-5 marquee">
-            {testimonials.map((testimonial) => (
-                <a key={testimonial.src} className="flex items-center gap-2 mb-8 mt-8 min-w-xl md:items-center mx-10 md:mx-4">
-                <p className="text-garoo-sky text-center  text-xl md:text-2xl font-bold tracking-tight w-full whitespace-nowrap">{testimonial.text}</p>
-                <Image className="col-span-2 object-contain lg:col-span-1 max-h-12 w-12 md:w-20 md:w-14" src={testimonial.src} alt="Testimonial" width={100} height={100} />
-              </a>
-                ))
-            }
-          </div>
-          </div>
-        </div>
-      </div>
-    )
-  }
+      <div className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-50px),transparent_100%)]">
+      <ul ref={carouselRef} className="flex items-center justify-center md:justify-start gap-x-8 animate-infinite-scroll px-4">
+        {testimonials.map((logo, index) => (
+          <li key={index} className="h-80 w-60">
+            <img src={logo}  className="object-contain rounded-md" alt="logo" />
+          </li>
+        ))}
+      </ul>                
+    </div>
+  )
+}
 
 export default LogoTestimonials
   

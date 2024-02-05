@@ -25,6 +25,15 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     },
     extend: {
+      animation: {
+        'infinite-scroll': 'infinite-scroll 25s linear infinite',
+      },
+      keyframes: {
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        }
+      },                    
       fontFamily: {
         satoshi: ['Satoshi', 'sans-serif'],
         inter: ['inter', 'sans-serif'],

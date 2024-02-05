@@ -1,22 +1,22 @@
 .marquee {
     flex: 0 0 auto;
-    min-width: var(--min-width, 100%);
+    width: calc((16 * 80px) + (15 * 20px));
     z-index: 1;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    animation: scroll var(--duration, 30s) linear var(--delay, 0s) var(--iteration-count, infinite);
+    align-items: flex-start;
+    animation: scroll var(--duration, 15s) linear var(--delay, 0s) var(--iteration-count, infinite);
     animation-play-state: var(--play, running);
-    animation-delay: var(--delay, 0s);
+    animation-delay: var(0s, 0s);
     animation-direction: var(--direction, normal);
 }
 
 @keyframes scroll {
     0% {
-        transform: translateX(100%);
+        transform: translateX(0%);
     }
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
 }
 
@@ -35,10 +35,10 @@
 
     @keyframes scroll {
         0% {
-            transform: translateX(100%);
+            transform: translateX(0%);
         }
         100% {
-            transform: translateX(-500%);
+            transform: translateX(-300%);
         }
     }
 }
