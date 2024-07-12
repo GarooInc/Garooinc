@@ -8,14 +8,13 @@ const Footer = () => {
                 <img src="/assets/images/logo2.png" alt="Logo" className="footer-logo" />
                 <p className="footer-description">Ordinary technology made extraordinary</p>
                 <div className="flex mb-10 mt-10">
-                    {/* Replace # with your social media links */}
-                    <a href="#" className="footer-social">
+                    <a href="https://www.instagram.com/garoo.inc?igsh=MTRucnBjdmQ0YnI5ZQ==" className="footer-social">
+                        <img src="/assets/images/ig.svg" alt="Instagram" />
+                    </a>
+                    <a href="https://www.facebook.com/share/abnfNG2zoiFng4Wf/?mibextid=LQQJ4d" className="footer-social">
                         <img src="/assets/images/fb.svg" alt="Facebook" />
                     </a>
-                    <a href="#" className="footer-social">
-                        <img src="/assets/images/tw.svg" alt="Instagram" />
-                    </a>
-                    <a href="#" className="footer-social">
+                    <a href="https://www.linkedin.com/company/garoo-inc/" className="footer-social">
                         <img src="/assets/images/li.svg" alt="Twitter" />
                     </a>
                 </div>
